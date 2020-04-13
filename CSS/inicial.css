@@ -1,8 +1,52 @@
 body{
 	background-color: black;
+	color: white;
 }
 
 .container{
 	background-color: white;
-	height: 50rem;
+	height: 100rem;
+	width: 60rem;
+}	
+#navlogo{
+	margin-left: 27rem;
 }
+.navbar{
+	background-color: #174234;
+	width: 100%;
+}
+#navbarDropdown{
+	color: white;
+}
+
+.col-lg-12{
+	padding: 0;
+}
+
+h3{
+	margin-right: 7rem;
+}
+.linha{
+	border-left: 1px solid white;
+  	height: 50px;
+	margin: 0px 10px 0px 10px;
+}
+.classes{
+	font-size: 20px;
+	background-color: transparent;
+	color: white;
+	border: none;
+	outline: none;
+}
+
+.conteudo{
+	color: black;
+	text-align: center;
+}
+#guerreiro{
+	display: block;
+}
+#cacador{
+	display: none;
+}
+
