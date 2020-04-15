@@ -23,7 +23,7 @@ body{
 	padding: 0;
 }
 
-h3{
+h2{
 	margin-right: 7rem;
 }
 .linha{
@@ -50,3 +50,75 @@ h3{
 	display: none;
 }
 
+#inputState{
+	width: 13rem;
+}
+
+@media only screen and (max-width: 800px) {
+  #inputState {display: none;}
+}
+
+@media only screen and (max-width: 800px) {
+  h2 {margin-right: 5rem;}
+}
+@media only screen and (max-width: 1000px) {
+  #dots { display: none;}
+}
+
+#dots{
+	margin-left: 25.6rem;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin-top: -18rem;
+  position: absolute;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+#dot2{
+	margin-left: 2rem;
+}
+#dot3{
+	margin-left: 4rem; 
+}
+#dot4{
+	margin-left: 6rem; 
+}
+
+
+.active {
+  background-color: #174234;
+}
+
+#usuario{
+	margin-right: 13rem;
+}
+
+.user{
+  background: white;
+  width: 9rem;
+  height: 2.8rem;
+  padding-top: 0.5rem;
+  display: none;
+  border-radius: 3%;
+  position: absolute;
+  margin-top: -47.7rem;
+  margin-left: 53.5rem;
+}
+#log{
+	display: block;
+	border: none;
+	background-color: transparent;
+	width: 9rem;
+	color: #212529;
+	outline: none;
+}
+#log:hover{
+	background-color: #f8f9fa;
+}
+#userlogin{
+	color: white;
+}
