@@ -1,11 +1,15 @@
+html{
+	scroll-behavior: smooth;
+}
 body{
 	background-color: black;
 	color: white;
 }
 
 .container{
-	background-color: white;
-	height: 100rem;
+	background-image: url("../Imagens/teste3.jpg");
+	 background-size: cover;
+	height: 130rem;
 	width: 60rem;
 }	
 #navlogo{
@@ -15,17 +19,16 @@ body{
 	background-color: #174234;
 	width: 100%;
 }
-#navbarDropdown{
+#menuEntrar a{
 	color: white;
+	margin-left: 10px;
+	margin-right: -10px;
 }
 
 .col-lg-12{
 	padding: 0;
 }
 
-h2{
-	margin-right: 7rem;
-}
 .linha{
 	border-left: 1px solid white;
   	height: 50px;
@@ -37,16 +40,34 @@ h2{
 	color: white;
 	border: none;
 	outline: none;
+	padding-bottom: 10px;
+	margin-top: 5px;
 }
 
-.conteudo{
-	color: black;
+.conteudo h1{
+	font-size: 3.5rem;
 	text-align: center;
+	margin-top: 40px;
+	padding-bottom: 10px;
 }
-#guerreiro{
-	display: block;
+.div1{
+	padding-top: 3rem;
+	width: 32rem;
+	padding-left: 3rem;
 }
-#cacador{
+#caracteristicas{
+	padding-top: 10rem;
+	text-align: center;
+	width: 32rem;
+	margin-left: 30rem;
+}
+.funcao{
+	font-size: 1.5rem;
+	color: #c7d1c0;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.itens{
 	display: none;
 }
 
@@ -64,6 +85,9 @@ h2{
 @media only screen and (max-width: 1000px) {
   #dots { display: none;}
 }
+@media only screen and (max-width: 800px) {
+  #menuEntrar a { margin: 0;}
+}
 
 #dots{
 	margin-left: 25.6rem;
@@ -71,12 +95,12 @@ h2{
 .dot {
   height: 15px;
   width: 15px;
-  margin-top: -18rem;
+  margin-top: -3rem;
   position: absolute;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 1s ease;
 }
 #dot2{
 	margin-left: 2rem;
@@ -87,16 +111,19 @@ h2{
 #dot4{
 	margin-left: 6rem; 
 }
-
-
 .active {
   background-color: #174234;
 }
 
 #usuario{
-	margin-right: 13rem;
+	margin-right: -10px;
 }
-
+#navlogin h2 {
+	margin-right: 4rem;
+}
+#navsemlogin h2 {
+	margin-right: 6.2rem;
+}
 .user{
   background: white;
   width: 9rem;
@@ -105,8 +132,8 @@ h2{
   display: none;
   border-radius: 3%;
   position: absolute;
-  margin-top: -47.7rem;
-  margin-left: 53.5rem;
+  margin-top: -111.2rem;
+  margin-left: 54.2rem;
 }
 #log{
 	display: block;
@@ -121,4 +148,25 @@ h2{
 }
 #userlogin{
 	color: white;
+}
+
+.classes:hover{
+	border-bottom: 2px solid white;
+}
+.localizacao {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.imgclass{
+	margin-left: 29%;
+	width: 25rem;
+	border-radius: 10%;
+}
+#guerreiro2img{
+	margin-top: -17rem;
+	position: absolute;
+	margin-left: 10%;
+	width: 25rem;
+	border-radius: 10%;
 }

@@ -32,7 +32,7 @@
 			// setcookie("login",$login);
 		 	echo"<script language='javascript' type='text/javascript'>
 		    alert('Usuário cadastrado com sucesso!');window.location.
-		    href='paginicial.php'</script>";
+		    href='index.php'</script>";
 		    
 			}	
        	}
@@ -53,7 +53,7 @@
  	  		}else{
  	  			$_SESSION['login'] = $email;
 		    	$_SESSION['success'] = "voce esta logado";	
- 	  			header("location: paginicial.php");
+ 	  			header("location: index.php");
 
  	  		}
 

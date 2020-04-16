@@ -1,12 +1,23 @@
+// botões de classes
 function guerreiro() {
-	$("#guerreiro").css({display: "block"});
-	$("#cacador").css({display: "none"});
+	if ($(window).scrollTop() == 0){window.scroll(0,570);}
+	$("#guerreiro").css("display", "block");
+	$("#cacador").css("display", "none");
+	$("#sacerdote").css("display", "none");
 }
 function cacador() {
-	$("#cacador").css({display: "block"});
-	$("#guerreiro").css({display: "none"});
+	if ($(window).scrollTop() == 0){window.scroll(0,570);}
+	$("#cacador").css("display", "block");
+	$("#guerreiro").css("display", "none");
+	$("#sacerdote").css("display", "none");
 }
-
+function sacerdote(){
+	if ($(window).scrollTop() == 0){window.scroll(0,570);}
+	$("#sacerdote").css("display", "block");
+	$("#cacador").css("display", "none");
+	$("#guerreiro").css("display", "none");
+}
+// slideShow automático
 var intervalo = 3000;
 var dot1 = document.getElementById('dot1');
 var dot2 = document.getElementById('dot2');
@@ -40,15 +51,26 @@ function slide4(){
 	dot3.classList.remove("active");
 	setTimeout("slide1()",intervalo);
 }
+// botão entrar
+$(document).ready(function(){
+  $("#menuEntrar").hover(function(){
+    $(".user").css("display", "block");
+    }, function(){
+    $(".user").css("display", "none");
+  });
+});
 
-// $(document).ready(function(){
-//   $("#menuEntrar").hover(function(){
-//     $(".user").css("display", "block");
-//     }, function(){
-//     $(".user").css("display", "none");
-//   });
-// });
+$(document).ready(function(){
+  $(".user").hover(function(){
+    $(this).css("display", "block");
+    }, function(){
+    $(this).css("display", "none");
+  });
+});
 
-$('#navbarDropdown').on('click', function() {
+
+$('#menuEntrar').on('click', function() {
   $('.user').toggle();
 });
+	
+
