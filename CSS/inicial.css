@@ -7,9 +7,6 @@ body{
 }
 
 .container{
-	background-image: url("../Imagens/teste3.jpg");
-	 background-size: cover;
-	height: 130rem;
 	width: 60rem;
 }	
 #navlogo{
@@ -43,6 +40,11 @@ body{
 	padding-bottom: 10px;
 	margin-top: 5px;
 }
+.conteudo{
+	background-image: url("../Imagens/teste3.jpg");
+	 background-size: cover;
+	 height: 85rem;
+}
 
 .conteudo h1{
 	font-size: 3.5rem;
@@ -50,23 +52,7 @@ body{
 	margin-top: 40px;
 	padding-bottom: 10px;
 }
-.div1{
-	padding-top: 3rem;
-	width: 32rem;
-	padding-left: 3rem;
-}
-#caracteristicas{
-	padding-top: 10rem;
-	text-align: center;
-	width: 32rem;
-	margin-left: 30rem;
-}
-.funcao{
-	font-size: 1.5rem;
-	color: #c7d1c0;
-	text-align: center;
-	padding-bottom: 20px;
-}
+
 .itens{
 	display: none;
 }
@@ -76,17 +62,11 @@ body{
 }
 
 @media only screen and (max-width: 800px) {
-  #inputState {display: none;}
-}
-
-@media only screen and (max-width: 800px) {
-  h2 {margin-right: 5rem;}
+	#menuEntrar a { margin: 0;}
+    #inputState {display: none;}
 }
 @media only screen and (max-width: 1000px) {
   #dots { display: none;}
-}
-@media only screen and (max-width: 800px) {
-  #menuEntrar a { margin: 0;}
 }
 
 #dots{
@@ -95,7 +75,7 @@ body{
 .dot {
   height: 15px;
   width: 15px;
-  margin-top: -3rem;
+  margin-top: -2rem;
   position: absolute;
   background-color: #bbb;
   border-radius: 50%;
@@ -122,7 +102,7 @@ body{
 	margin-right: 4rem;
 }
 #navsemlogin h2 {
-	margin-right: 6.2rem;
+	margin-right: 5.8rem;
 }
 .user{
   background: white;
@@ -132,7 +112,7 @@ body{
   display: none;
   border-radius: 3%;
   position: absolute;
-  margin-top: -111.2rem;
+  margin-top: -125.4rem;
   margin-left: 54.2rem;
 }
 #log{
@@ -157,16 +137,67 @@ body{
 	margin-left: 20px;
 	margin-top: 20px;
 }
+.localizacao:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+#caracteristicas{
+	padding-top: 10rem;
+	text-align: center;
+	width: 32rem;
+	margin-left: 30rem;
+}
+.funcao{
+	font-size: 1.5rem;
+	color: #c7d1c0;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.div1{
+	padding-top: 3rem;
+	width: 32rem;
+	padding-left: 3rem;
+}
 
-.imgclass{
+#imgguerreiro1{
 	margin-left: 29%;
 	width: 25rem;
 	border-radius: 10%;
 }
-#guerreiro2img{
+#imgguerreiro2{
 	margin-top: -17rem;
 	position: absolute;
 	margin-left: 10%;
 	width: 25rem;
+	border-radius: 10%;
+}
+@media only screen and (max-width: 1000px) {	
+    #imgguerreiro1 { width: 20rem; margin-left: 18%;}
+    #imgguerreiro2 {width: 18rem; margin-left: 22%; margin-top: -30rem;}
+    #caracteristicas { margin-left: 0; margin-top: 14rem;}	
+    .div1 {width: 28rem; text-align: center; }
+}
+#imgcacador1{
+	margin-left: 24.5%;
+	width: 30rem;
+	border-radius: 10%;
+}
+#imgcacador2{
+	margin-top: -17rem;
+	position: absolute;
+	margin-left: 7%;
+	width: 30rem;
+	border-radius: 10%;
+}
+#imgsacerdote1{
+	margin-left: 33%;
+	width: 20rem;
+	border-radius: 10%;
+}
+#imgsacerdote2{
+	margin-top: -17rem;
+	position: absolute;
+	margin-left: 14%;
+	width: 22rem;
 	border-radius: 10%;
 }
